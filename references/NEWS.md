@@ -1,4 +1,4 @@
-# lecture-05 v18.1.0.9000
+# lecture-05 v18.3.0
 
 * Initial repo setup:
     * Add `.github/` directory with community documents
@@ -8,7 +8,11 @@
     * Add `.gitignore` and `.Rbuildignore`
     * Add `.travis.yml` and `appveyor.yml`, but CI is not turned on for this repo
     * Add `DESCRIPTION` for eventual CI testing
-    * Add `.Rpoj` file
+    * Add `.Rproj` file
 
 * Update `.github/` documents to latest community standards
 * Add `remotes` and `usethis` packages as dependencies
+
+* Update reference materials
+* Add handouts
+* Add assignment instructions

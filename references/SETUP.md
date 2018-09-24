@@ -3,21 +3,14 @@ The following packages are required for this lecture. See the [package index](ht
 
 ### `tidyverse`
 
-*
+* `ggplot2` - qq plotting
 
 ### Statistics
 
-*
+* `moments` - skew and kurtosis
+* `nortest` - normality testing
 
 ### Literate Programming
 
 * `knitr` - create documents from R notebooks
 * `rmarkdown` - write in Markdown syntax
-
-### Project Organization
-
-* `here` - manage file paths
-
-### Other packages
-
-*
