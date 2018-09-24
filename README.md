@@ -13,7 +13,10 @@ This is the repository for Lecture 05 of the Saint Louis University course SOC 4
 ### Lecture Objectives
 At the end of this lecture and its corresponding assignments, students should be able to:
 
-1.
+1. Describe the shape and purpose of three major random variable distributions: binomial, poisson, and gaussian
+2. Calculate probabilities associated with these three different random variable distributions
+3. Describe the basic premise of statistical significance
+4. Evaluate the normality of a given continuous distribution
 
 ### Lecture Resources
 
