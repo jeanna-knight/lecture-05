@@ -1,0 +1,79 @@
+\documentclass{tufte-handout}
+
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+% set hyperlink attributes
+\hypersetup{colorlinks}
+
+\usepackage{amsmath}
+
+% set image attributes:
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+% create environment for bottom paragraph:
+\newenvironment{bottompar}{\par\vspace*{\fill}}{\clearpage}
+
+% ============================================================
+
+% define the title
+\title{SOC 4015/5050: Lecture 05 Equations}
+\author{Christopher Prener, Ph.D.}
+\date{Fall 2018}
+% ============================================================
+\begin{document}
+% ============================================================
+\maketitle % generates the title
+% ============================================================
+
+\vspace{5mm}
+\section{Binomial Distribution}
+For the binomial distribution, let: \\
+\noindent $n =$ number of independent trials \\
+\noindent $p =$ probability of success in each trial
+
+\paragraph{Mean}\mbox{}\\
+\begin{equation}
+\scalebox{2} {$ \mu = np $}
+\end{equation}
+
+\paragraph{Standard Deviation}\mbox{}\\
+\begin{equation}
+\scalebox{2} {$ \sigma =\sqrt { np\left( 1-p \right)  } $}
+\end{equation}
+
+\vspace{5mm}
+\section{Poisson Distribution}
+For the Poisson distribution, let: \\
+\noindent $n =$ count of independent events \\
+\noindent $p =$ probability of success in each event \\
+\begin{equation}
+\scalebox{2} {$ \lambda = np $}
+\end{equation}
+
+\vspace{5mm}
+\section{Standard Normal Distribution}
+\paragraph{Standardized Scores: Population}\mbox{}\\
+\begin{equation}
+\scalebox{2} {$ z = \frac{x-\mu}{\sigma} $}
+\end{equation}
+
+\paragraph{Standardized Scores: Sample}\mbox{}\\
+\begin{equation}
+\scalebox{2} {$ z = \frac{x-\bar{x}}{s} $}
+\end{equation}
+
+\vspace{5mm}
+\section{Skew}\marginnote{Note that $sk$ is an abbreviation that I use in my classes to differentiate skew from standard deviation. There is no single accepted abbreviation for skew. Similarly, there are a number of equations in use to calculate skew; this is one that I teach because it simplifies some of the required calculations.}
+\begin{equation}
+\scalebox{2} {$ sk = \sqrt{n}\frac { \sum _{ i=1 }^{ n }{ \left( {x}_{i}-\bar{x} \right)^3 }  }{ \left( \sum _{ i=1 }^{ n }{ \left( { x }_{ i }-\bar{x} \right)^2 }  \right)^\frac{3}{2}  } $}
+\end{equation}
+
+\vspace{5mm}
+\section{Kurtosis}\marginnote{Note that there are a number of accepted abbreviations for kurtosis including $k$. There are also a number of equations in use to calculate kurtosis. As with skew, this is one that I teach because it simplifies some of the required calculations.}
+\begin{equation}
+\scalebox{2} {$ k = n\frac { \sum _{ i=1 }^{ n }{ \left( {x}_{i}-\bar{x} \right)^4 }  }{ \left( \sum _{ i=1 }^{ n }{ \left( { x }_{ i }-\bar{x} \right)^2 }  \right)^2  } $}
+\end{equation}
+% ============================================================
+\end{document}

@@ -1,0 +1,118 @@
+\documentclass{tufte-handout}
+
+\usepackage{xcolor}
+
+% set hyperlink attributes
+\hypersetup{colorlinks}
+
+% set image attributes:
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+% indent subsections
+\newenvironment{subs}
+  {\adjustwidth{3em}{0pt}}
+  {\endadjustwidth}
+
+
+% ============================================================
+
+% define the title
+\title{SOC 4015/5050: Lecture 05 Functions}
+\author{Christopher Prener, Ph.D.}
+\date{Fall 2018}
+% ============================================================
+\begin{document}
+% ============================================================
+\maketitle % generates the title
+% ============================================================
+
+\vspace{5mm}
+\section{Packages}
+\begin{itemize}
+\item \texttt{ggplot2}
+\item \texttt{moments}
+\item \texttt{nortest}
+\item \texttt{stats}
+\end{itemize}
+
+\vspace{5mm}
+\section{Binomial Distribution}
+For the binomial distribution, let: \\
+\noindent $n =$ number of independent trials \\
+\noindent $k =$ number of successes \\
+\noindent $p =$ probability of success in each trial
+
+\begin{subs}
+
+\vspace{3mm}
+\subsection{Probability of k Successes}
+\noindent \texttt{stats::}{\color{red}\texttt{dbinom}}\texttt{(\textit{k}, size=\textit{n}, prob=\textit{p})}\\
+
+\vspace{3mm}
+\subsection{Probability of k or Fewer Successes}
+\noindent \texttt{stats::}{\color{red}\texttt{pbinom}}\texttt{(\textit{k}, size=\textit{n}, prob=\textit{p}, lower.tail=TRUE)}\\
+
+\vspace{3mm}
+\subsection{Probability of More Than k Successes}
+\noindent \texttt{stats::}{\color{red}\texttt{pbinom}}\texttt{(\textit{k}, size=\textit{n}, prob=\textit{p}, lower.tail=FALSE)}\\
+
+\end{subs}
+
+\vspace{5mm}
+\section{Poisson Distribution}
+For the Poisson distribution, let: \\
+\noindent $m = \lambda $ \\
+\noindent $k = $ number of successes
+
+\begin{subs}
+
+\vspace{3mm}
+\subsection{Probability of k Successes}
+\noindent \texttt{stats::}{\color{red}\texttt{dpois}}\texttt{(\textit{k}, lambda=\textit{m})}\\
+
+\vspace{3mm}
+\subsection{Probability of k or Fewer Successes}
+\noindent \texttt{stats::}{\color{red}\texttt{ppois}}\texttt{(\textit{k}, lambda=\textit{m}, lower.tail=TRUE)}\\
+
+\vspace{3mm}
+\subsection{Probability of More Than k Successes}
+\noindent \texttt{stats::}{\color{red}\texttt{ppois}}\texttt{(\textit{k}, lambda=\textit{m}, lower.tail=FALSE)}\\
+
+\end{subs}
+
+\vspace{5mm}
+\section{Normal Distribution}
+For the normal distribution, let: \\
+\noindent $z =$ standardized score\\
+
+\begin{subs}
+
+\vspace{3mm}
+\subsection{Cumulative Probability}
+\noindent \texttt{stats::}{\color{red}\texttt{pnorm}}\texttt{(\textit{z}, mean=0, sd=1, lower.tail=TRUE)}\\
+
+\end{subs}
+
+\vspace{5mm}
+\section{Normality Testing}
+\begin{subs}
+
+\subsection{Descriptive Statistics}
+\noindent \texttt{moments::}{\color{red}\texttt{skewness}}\texttt{(\textit{data}\$\textit{var})}\\
+\noindent \texttt{moments::}{\color{red}\texttt{kurtosis}}\texttt{(\textit{data}\$\textit{var})}\\
+
+\vspace{3mm}
+\subsection{Q-Q Plot}
+\noindent \texttt{ggplot2::}{\color{red}\texttt{ggplot}}\texttt{(\textit{data}, mapping = aes(sample = \textit{y}) +}
+\\ \texttt{stat\_qq() +}
+\\ \texttt{stat\_qq\_line()}
+
+\vspace{3mm}
+\subsection{Shapiro-Francia Test}
+\noindent \texttt{nortest::}{\color{red}\texttt{sf.test}}\texttt{(\textit{data}\$\textit{var})}\\
+
+\end{subs}
+
+% ============================================================
+\end{document}
