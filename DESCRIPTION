@@ -1,6 +1,6 @@
 Package: lecture-05
 Title: SOC 4015/5050 - Lecture 05 - The Distribution of Random Variables
-Version: 18.3.0.9000
+Version: 18.3.0
 Authors@R: person("Christopher", "Prener", email = "chris.prener@slu.edu",
                   role = c("aut", "cre"))
 Description: This is the repository for Lecture 05 of the Saint Louis University
@@ -19,5 +19,4 @@ Imports:
     nortest,
     rmarkdown,
     testDriveR,
-    usethis,
-    testDriver
+    usethis

@@ -16,3 +16,4 @@
 * Update reference materials
 * Add handouts
 * Add assignment instructions
+* Add lab replication files
